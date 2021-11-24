@@ -1,5 +1,5 @@
 body{
-	фон: url ( "artinci / priroda.jpg" ) no-repeat ; / * встааить картинку + растягиваем на всю страницу * /
+	фон: url ( "cartinci / priroda.jpg" ) no-repeat ; / * встааить картинку + растягиваем на всю страницу * /
 	размер фона : 100% ;
 	color: #B09797;	
 }
@@ -7,8 +7,8 @@ body{
 .menu li /* размер нижнего меню*/
 {
 float: left;
-list-style: none;
-margin: 10px 25px ;
+стиль списка : нет ;
+маржа : 10px  25px ;
 }
 .blok-menu /*цвет нижнего меню и тень*/
 {
