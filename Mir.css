@@ -1,5 +1,5 @@
 body{
-	background: url("Cartinci/priroda.jpg") no-repeat;/*встааить картинку+ растягиваем на всю страницу*/
+	background: url("cartinci/priroda.jpg") no-repeat;/*встааить картинку+ растягиваем на всю страницу*/
 	background-size: 100%;
 	color: #B09797;	
 }
