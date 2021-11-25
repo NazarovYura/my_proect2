@@ -167,7 +167,7 @@ display: table;
 list-style: none;
  	border-radius: 150px;
  	display: flex;/*+BD8EPgQzBD4EPQRPBDUEQg +BDoEMARABEIEOAQ9BDoEQw +BD8EPgQ0 div*/
-  overflow: hidden;/*+BEIENQQ6BEEEQg,+BDoEMARABEIEOAQ9BDoEMA +BDIEPQRDBEIEQAQ4 div*/
+        /*overflow: hidden;/*+BEIENQQ6BEEEQg,+BDoEMARABEIEOAQ9BDoEMA +BDIEPQRDBEIEQAQ4 div*/
 	border: 2px solid #151717;/*+BEAEMAQ8BDoEMA +BEAEMAQ3BDwENQRA*/
 	width: 90%;/*+BEgEOARABDgEPQQw div*/
 	height: 200px;/*+BDIESwRBBD4EQgQw div*/
