@@ -167,8 +167,8 @@ display: table;
  	display: flex;/*погоняет картинку под div*/
   overflow: hidden;/*текст,картинка внутри div*/
 	border: 2px solid #151717;/*рамка размер*/
-	width: 15em;/*ширина div*/
-	height: 15em;/*высота div*/
+	width: 10em;/*ширина div*/
+	height: 10em;/*высота div*/
 	background-color: skyblue;
   transform: rotate(45deg);/*вращать div*/
   /*margin: 5% 5%;/*двигать и не дает придиматься другим блокам div*/
