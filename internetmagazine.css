@@ -1,0 +1,361 @@
+*{
+
+	margin: 0px;	padding: 0px;
+
+}
+
+.menu li /* размер таблички*/
+
+{
+
+float: left;
+
+list-style: none;
+
+margin: 10px 25px ;
+
+}
+
+.blok-menu /*цвет таблички и тень*/
+
+{
+
+	overflow: hidden;
+
+	background: #374DD1;/*цвет фона меню*/
+
+	box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+
+	opacity: 0.7;/*прозрачность*/
+
+	position: absolute;/*опускпет нижний бар*/
+
+  width: 100%;/*опускпет нижний бар*/
+
+  bottom: 0px;/*опускпет нижний бар*/
+
+}
+
+.menu
+
+{
+
+	margin: 0 auto;
+
+	display: table;
+
+}
+
+.menu li a /*размер текста*/
+
+{
+
+font: 14px verdana,Arial,helvetica,sans-serif;
+
+color: #F5EBEB;/*цвет текста*/
+
+text-decoration: none;
+
+}
+
+.menu li a:hover /*размер текста при нажатии на текст*/
+
+{
+
+	font: 14px verdana,Arial,helvetica,sans-serif;
+
+	color: #ccc;
+
+	border-bottom: 1px dotted #ccc;
+
+}
+
+ /*создаем верхний бар*/
+
+* { box-sizing: border-box;
+
+} 
+
+body { 
+
+margin: 0;
+
+background: radial-gradient(#374DD1 1px, rgba(255,255,255,0) 2px);/*узор фона страницы*/
+
+background-size: 20px 20px;/*размер узор*/
+
+} 
+
+header { 
+
+background: #374DD1; 
+
+text-align: center; 
+
+opacity: 0.7;
+
+box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+
+} 
+
+header a { 
+
+text-decoration: none; 
+
+outline: none; 
+
+display: block; 
+
+transition: .3s ease-in-out; 
+
+} 
+
+.logo { 
+
+color: #D5B45B; /*цвет текста */
+
+font-family: 'Playfair Display', serif; 
+
+font-size: 2.5em; 
+
+padding: 20px 0; 
+
+} 
+
+nav { 
+
+display: table;
+
+ margin: 0 auto; 
+
+ } 
+
+ nav ul { 
+
+ list-style: none;
+
+  margin: 0; 
+
+  padding: 0; 
+
+  } 
+
+  .topmenu:after { 
+
+  content: """; 
+
+  display: table; 
+
+  clear: both; 
+
+  } 
+
+  .topmenu > li { 
+
+  width: 25%; 
+
+  float: left; 
+
+  position: relative; 
+
+  font-family: 'Open Sans', sans-serif; } 
+
+  .topmenu > li > a { 
+
+  text-transform: uppercase; 
+
+  font-size: 14px; 
+
+  font-weight: bold; 
+
+  color: #FFFFFF; /*цвет текста*/
+
+  padding: 15px 30px; 
+
+  } 
+
+.topmenu li a:hover { 
+
+  color: #D5B45B; 
+
+  } 
+
+                           /*выпадающее меню*/
+
+.submenu-link:after { 
+
+  content: ""; 
+
+  font-family: "FontAwesome"; 
+
+  color: inherit;
+
+  margin-left: 10px;
+
+  } 
+
+.submenu { 
+
+  background: #374DD1; /*цвет выпадпющего меню*/
+
+  position: absolute; 
+
+  left: 0; 
+
+  top: 100%; 
+
+  z-index: 5; 
+
+  width: 180px;  
+
+  transform: scaleY(0); 
+
+  transform-origin: 0 0; 
+
+  transition: .5s ease-in-out; 
+
+  box-shadow: 0px 13px 17px -6px #000000;
+
+  } 
+
+.submenu a {
+
+   color: #FFFFFF; 
+
+   text-align: left; 
+
+   padding: 12px 15px; 
+
+   font-size: 13px; 
+
+   border-bottom: 1px solid rgba(255,255,255,.1);
+
+   font-weight: bold;
+
+   } 
+
+  .submenu li:last-child a { 
+
+  border-bottom: none;
+
+  } 
+
+  .topmenu > li:hover 
+
+  .submenu { 
+
+  opacity: 0.7; 
+
+  transform: scaleY(1);
+
+  }
+
+                              /*выпадающее menukontakti*/
+
+  .kontakti-link:after { 
+
+  content:""; 
+
+  font-family: "FontAwesome"; 
+
+  color: inherit;
+
+  margin-left: 10px;
+
+  } 
+
+.kontakti { 
+
+  background: #374DD1; /*цвет меню*/
+
+  position: absolute; 
+
+  left: 0; 
+
+  top: 100%; 
+
+  z-index: 5; 
+
+  width: 180px; 
+
+  opacity: 0.9; 
+
+  transform: scaleY(0); 
+
+  transform-origin: 0 0; 
+
+  transition: .5s ease-in-out; 
+
+  box-shadow: 0px 13px 17px -6px #000000;
+
+  } 
+
+.kontakti a {
+
+   color: #FFFFFF; 
+
+   text-align: left; 
+
+   padding: 12px 15px; 
+
+   font-size: 14px; 
+
+   border-bottom: 1px solid rgba(255,255,255,.1);
+
+   font-weight: bold;
+
+   } 
+
+  .kontakti li:last-child a { 
+
+  border-bottom: none;
+
+  } 
+
+  .topmenu > li:hover 
+
+  .kontakti { 
+
+  opacity: 1; 
+
+  transform: scaleY(1);
+
+  }
+
+                          /*Ромб на карту*/
+
+  .ROMBM{	
+
+  float: left;
+
+list-style: none;
+
+ 	border-radius: 150px;
+
+ 	display: flex;/*погоняет картинку под div*/
+
+  overflow: hidden;/*текст,картинка внутри div*/
+
+	border: 2px solid #151717;/*рамка размер*/
+
+	width: 100%;/*ширина div*/
+
+	height: 250px;/*высота div*/
+
+	background-color: skyblue;
+
+ transform: rotate(deg);/*вращать div*/
+
+  /*margin: 10% 5%;/*двигать и не дает придиматься другим блокам div*/
+
+  margin-left: 15px;/*отступ с лево*/
+
+  margin-top: 150px;/*отступ сверху*/
+
+  margin-bottom: 50px;/*отступ снизу*/
+
+  position: relative;
+
+  box-shadow: 0px 13px 17px -6px #000000;
+
+ }
