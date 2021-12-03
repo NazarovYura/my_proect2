@@ -1,0 +1,163 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.menu li /* +BEAEMAQ3BDwENQRA +BEIEMAQxBDsEOARHBDoEOA*/
+{
+float: left;
+list-style: none;
+margin: 10px 25px ;
+}
+.blok-menu /*+BEYEMgQ1BEI +BEIEMAQxBDsEOARHBDoEOA +BDg +BEIENQQ9BEw*/
+{
+	overflow: hidden;
+	background: #374DD1;/*+BEYEMgQ1BEI +BEQEPgQ9BDA +BDwENQQ9BE4*/
+	box-shadow: 0px 13px 17px -6px #000000;/*+BEIENQQ9BEw*/
+	opacity: 0.7;/*+BD8EQAQ+BDcEQAQwBEcEPQQ+BEEEQgRM*/
+	position: fixed;/*+BD4EPwRDBEEEOgQ/BDUEQg +BD0EOAQ2BD0EOAQ5 +BDEEMARA*/
+  width: 100%;/*+BD4EPwRDBEEEOgQ/BDUEQg +BD0EOAQ2BD0EOAQ5 +BDEEMARA*/
+  bottom: 0px;/*+BD4EPwRDBEEEOgQ/BDUEQg +BD0EOAQ2BD0EOAQ5 +BDEEMARA*/
+}
+.menu
+{
+	margin: 0 auto;
+	display: table;
+}
+.menu li a /*+BEAEMAQ3BDwENQRA +BEIENQQ6BEEEQgQw*/
+{
+font: 14px verdana,Arial,helvetica,sans-serif;
+color: #F5EBEB;/*+BEYEMgQ1BEI +BEIENQQ6BEEEQgQw*/
+text-decoration: none;
+}
+.menu li a:hover /*+BEAEMAQ3BDwENQRA +BEIENQQ6BEEEQgQw +BD8EQAQ4 +BD0EMAQ2BDAEQgQ4BDg +BD0EMA +BEIENQQ6BEEEQg*/
+{
+	font: 14px verdana,Arial,helvetica,sans-serif;
+	color: #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+ /*+BEEEPgQ3BDQEMAQ1BDw +BDIENQRABEUEPQQ4BDk +BDEEMARA*/
+* { box-sizing: border-box;} 
+body { 
+margin: 0;
+background: radial-gradient(#374DD1 1px, rgba(255,255,255,0) 2px);/*+BEMENwQ+BEA +BEQEPgQ9BDA +BEEEQgRABDAEPQQ4BEYESw*/
+background-size: 20px 20px;/*+BEAEMAQ3BDwENQRA +BEMENwQ+BEA*/
+} 
+                         /*Верхний бар*/
+header { 
+background: #374DD1; 
+text-align: center;
+box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+opacity: 0.8;
+} 
+header a { 
+text-decoration: none; 
+outline: none; 
+display: block; 
+transition: .3s ease-in-out; 
+} 
+.logo { 
+color: #D5B45B; 
+font-family: 'Playfair Display', serif; 
+font-size: 2.5em; 
+padding: 20px 0; 
+} 
+                          /*выпадающее меню*/
+nav { 
+display: table;
+ margin: 0 auto; 
+ } 
+ nav ul { 
+ list-style: none;
+  margin: 0; 
+  padding: 0; 
+  } 
+  .topmenu:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+  } 
+  .topmenu > li { 
+  width: 25%; 
+  float: left; 
+  position: relative; 
+  font-family: 'Open Sans', sans-serif; } 
+  .topmenu > li > a { 
+  text-transform: uppercase; 
+  font-size: 14px; 
+  font-weight: bold; 
+  color: #F9F8D0; /*цвет текста бара*/
+  padding: 15px 30px; 
+  } 
+.topmenu li a:hover { 
+  color: #D5B45B; /*цвет при открытии*/
+  } 
+                               /* выпадающие меню*/
+.submenu:after { 
+  content: ""; 
+  font-family: "FontAwesome"; 
+  color: inherit;
+  margin-left: 10px;
+  }
+.submenu {
+/* opacity: 0.7; /*прозрачность выпадпющего бара*/
+  background: #374DD1; /*цвет меню*/
+  position: absolute; 
+  left: 0px; 
+  top: 100%; 
+  z-index: 5; 
+  width: 100px; /*ширина выпадпющего меню*/
+  transform: scale(2, 0); /*закрытое положение*/
+  transform-origin: 0 0; 
+  transition: .5s ease-in-out; 
+  box-shadow: 0px 13px 17px -6px #000000;
+  } 
+.submenu a {
+   color: #F9F8D0; /*Цвет текста выпадающего меню*/
+   text-align: left; 
+   padding: 12px 15px; 
+   font-size: 14px; 
+   border-bottom: 1px solid rgba(255,255,255,.1);
+   font-weight: bold;
+   } 
+  .submenu li:last-child a { 
+  border-bottom: none;
+  } 
+  .topmenu > li:hover 
+  .submenu {
+  opacity: 0.7; /*прозрачность выпадпющего бара*/
+  transform: scale(1, 1) skew(20deg);/*повороьт выпадпющего меню*/
+  box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+  }
+                          /*+BCAEPgQ8BDE +BD0EMA +BDoEMARABEIEQw*/ 
+.ROMB {
+width: 150px;
+height: 250px;
+border: 5px solid #444;/*рамка*/
+padding-top: 1px;
+position: fixed;/*опускпет нижний бар*/
+bottom: 40px;/*отступ снизу нижний бар*/
+border-radius: 0 180px 180px 0;
+display: flex;
+overflow: hidden;/*картинка в div*/
+transition: .2s ease-in-out; /*скорость трансформации*/
+box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+     }
+.ROMBM:hover {
+position: fixed;
+width: 95%;
+height: 250px;
+display: flex;
+overflow: hidden;/*картинка в div*/
+max-width: 1280px;
+     }
+.mapp{
+	background: #FFE9E9;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	font-size: 20px;
+	max-width: 50px;
+	}
+
+
+
+

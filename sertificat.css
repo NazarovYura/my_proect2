@@ -1,0 +1,217 @@
+.menu li /* размер таблички*/
+{
+float: left;
+list-style: none;
+margin: 10px 25px;
+}
+.blok-menu /*цвет таблички и тень*/
+{
+	overflow: hidden;
+	background: #FBEFD0;
+	box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+	opacity: 0.7;
+	 position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+.menu
+{
+	margin: 0 auto;
+	display: table;
+}
+.menu li a /*размер текста*/
+{
+font: 14px verdana,Arial,helvetica,sans-serif;
+color: #121111;
+text-decoration: none;
+}
+.menu li a:hover /*размер текста при нажатии на текст*/
+{
+	font: 14px verdana,Arial,helvetica,sans-serif;
+	color: #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+/*создаем верхний бар*/
+* { box-sizing: border-box;
+} 
+body { 
+margin: 0;
+background-image: url(sertificates/csssertificate.jpg);
+background-size: 40px 25px;/*размер узора*/
+padding: 0;
+} 
+header {
+position: relative;
+z-index: 10; 
+background: #FBEFD0; 
+text-align: center;
+opacity: 0.7;/*прозрачность*/
+box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+} 
+header a { 
+text-decoration: none; 
+outline: none; 
+display: block; 
+transition: .3s ease-in-out; 
+} 
+.logo { 
+color: #D5B45B; 
+font-family: 'Playfair Display', serif; 
+font-size: 2.5em; 
+padding: 20px 0; 
+} 
+nav { 
+display: table;
+ margin: 0 auto; 
+ } 
+ nav ul { 
+ list-style: none;
+  margin: 0; 
+  padding: 0; 
+  } 
+  .topmenu:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+  } 
+  .topmenu > li { 
+  width: 25%; 
+  float: left; 
+  position: relative; 
+  font-family: 'Open Sans', sans-serif; } 
+  .topmenu > li > a { 
+  text-transform: uppercase; 
+  font-size: 14px; 
+  font-weight: bold; 
+  color: #404040; 
+  padding: 15px 30px; 
+  } 
+.topmenu li a:hover { 
+  color: #D5B45B; 
+  } 
+                               /* выпадающие меню*/
+.submenu-link:after { 
+  content: ""; 
+  font-family: "FontAwesome"; 
+  color: inherit;
+  margin-left: 10px;
+  } 
+.submenu { 
+  background: #FBEFD0; /*цвет меню*/
+  position: absolute; 
+  left: 0; 
+  top: 100%; 
+  z-index: 5; 
+  width: 180px; 
+  opacity: 0.9; 
+  transform: scaleY(0); 
+  transform-origin: 0 0; 
+  transition: .5s ease-in-out; 
+  box-shadow: 0px 13px 17px -6px #000000;
+  } 
+.submenu a {
+   color: #0C0B0B; 
+   text-align: left; 
+   padding: 12px 15px; 
+   font-size: 14px; 
+   border-bottom: 1px solid rgba(255,255,255,.1);
+   font-weight: bold;
+   } 
+  .submenu li:last-child a { 
+  border-bottom: none;
+  } 
+  .topmenu > li:hover 
+  .submenu { 
+ /* opacity: 0.8; */
+  transform: scaleY(1);
+  }
+  .description {
+    min-width: 250px !important;
+  } 
+                 /*html*/
+.shtml{
+filter: sepia(100%);
+float: right;
+margin: 7px 0 7px 7px;
+border-radius: 360px; /*радиус углов*/
+margin-right: ;/*отступ*/
+border: 5px solid #444;/*рамка*/
+width: 155px;
+height: 155px;
+overflow: hidden;
+transition: .9s ease-in-out; /*скорость трансформации*/
+}
+.shtmlt:hover {
+filter: sepia(0%);
+width: 255px;
+height: 155px;
+display: flex;
+overflow: hidden;/*картинка в div*/
+border-radius: 0;
+}
+.shtmlj{
+width: 305px;
+height: 155px;
+}
+.html{
+	margin: 0 0 90px 0;
+	border: 2px solid #444;/*рамка*/
+}
+                 /*CSS*/
+.scss{
+filter: invert(100%);
+float: left;
+margin: 7px 0 7px 7px;/*отступ*/
+border-radius: 0 150px 0 150px; /*радиус углов*/
+border: 5px solid #444;/*рамка*/
+width: 70px;
+height: 155px;
+overflow: hidden;
+transition: .9s ease-in-out; /*скорость трансформации*/
+}
+.scsst:hover {
+width: 255px;
+height: 155px;
+display: flex;
+overflow: hidden;/*картинка в div*/
+border-radius: 0;
+filter: invert(0%);
+}
+.scssj{
+width: 305px;
+height: 155px;
+}
+.css{
+	margin: 0 0 90px 0;
+	border: 2px solid #444;/*рамка*/
+}
+                        /*JS*/
+.sjs{
+filter: hue-rotate(270deg);
+float: right;
+margin: 7px 0 7px 7px;
+border-radius: 180px 180px 0 0; /*радиус углов*/
+margin-right: ;/*отступ*/
+border: 5px solid #444;/*рамка*/
+width: 155px;
+height: 155px;
+overflow: hidden;
+transition: .9s ease-in-out; /*скорость трансформации*/
+}
+.sjst:hover {
+	filter: hue-rotate(0deg);
+width: 255px;
+height: 155px;
+display: flex;
+overflow: hidden;/*картинка в div*/
+border-radius: 0;
+}
+.sjsj{
+width: 305px;
+height: 155px;
+}
+.js{
+	margin: 0 0 90px 0;
+	border: 2px solid #444;/*рамка*/
+}
+  

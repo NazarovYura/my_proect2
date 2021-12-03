@@ -1,0 +1,154 @@
+body{
+	background: url("cartinci/priroda.jpg") no-repeat;/*встааить картинку+ растягиваем на всю страницу*/
+	background-size: 100%;
+	color: #B09797;	
+}
+                                 /*нижнее меню*/
+.menu li /* размер нижнего меню*/
+{
+float: left;
+list-style: none;
+margin: 10px 25px ;
+}
+.blok-menu /*цвет нижнего меню и тень*/
+{
+	overflow: hidden;
+	background: #33A83D;
+	box-shadow: 0px 13px 17px -6px #000000;
+	opacity: 0.7;
+	position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+.menu
+{
+	margin: 0 auto;
+	display: table;
+}
+.menu li a /*размер текста*/
+{
+font: 14px verdana,Arial,helvetica,sans-serif;
+color: #111111;
+text-decoration: none;
+font-weight: bold;
+}
+.menu li a:hover /*размер текста при нажатии на текст*/
+{
+	font: 14px verdana,Arial,helvetica,sans-serif;
+	color: #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+/*создаем верхний бар*/
+* { box-sizing: border-box;
+} 
+body { 
+margin: 0; 
+background:' '; 
+
+} 
+                           /*Верхний бар*/
+header { 
+position: relative;
+z-index: 10;
+/*filter: blur(3px);*/
+background: #33A83D; 
+text-align: center;
+box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+opacity: 0.8; /*выподающее меню поподает под другие элементы*/
+} 
+header a { 
+text-decoration: none; 
+outline: none; 
+display: block; 
+transition: .3s ease-in-out; 
+} 
+.logo { 
+color: #D5B45B; 
+font-family: 'Playfair Display', serif; 
+font-size: 2.5em; 
+padding: 20px 0; 
+} 
+                          /*выпадающее меню*/
+nav { 
+display: table;
+ margin: 0 auto; 
+ } 
+ nav ul { 
+ list-style: none;
+  margin: 0; 
+  padding: 0; 
+  } 
+  .topmenu:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+  } 
+  .topmenu > li { 
+  width: 25%; 
+  float: left; 
+  position: relative; 
+  font-family: 'Open Sans', sans-serif; } 
+  .topmenu > li > a { 
+  text-transform: uppercase; 
+  font-size: 14px; 
+  font-weight: bold; 
+  color: #404040; /*цвет текста*/
+  padding: 15px 30px; 
+  } 
+.topmenu li a:hover { 
+  color: #D5B45B; 
+  } 
+                               /* выпадающие меню*/
+.submenu:after { 
+  content: ""; 
+  font-family: "FontAwesome"; 
+  color: inherit;
+  margin-left: 10px;
+  } 
+.submenu { 
+/* opacity: 0.7; /*прозрачность выпадпющего бара*/
+  background: #33A83D; /*цвет меню*/
+  position: absolute; 
+  left: 0; 
+  top: 100%; 
+  z-index: 5; 
+  width: 180px; 
+  transform: scaleY(0); 
+  transform-origin: 0 0; 
+  transition: .5s ease-in-out; 
+  box-shadow: 0px 13px 17px -6px #000000;
+  } 
+.submenu a {
+   color: #0C0B0B; 
+   text-align: left; 
+   padding: 12px 15px; 
+   font-size: 14px; 
+   border-bottom: 1px solid rgba(255,255,255,.1);
+   font-weight: bold;
+   } 
+  .submenu li:last-child a { 
+  border-bottom: none;
+  } 
+  .topmenu > li:hover 
+  .submenu {
+  /*opacity: 0.7; /*прозрачность выпадпющего бара*/
+  transform: scale(1, 1) rotate(45deg);
+  box-shadow: 0px 13px 17px -6px #000000;/*тень*/
+  border-radius: 180px 0 180px 0;
+  
+  }
+  .description {
+    min-width: 250px !important;
+  } 
+                               /*текст природа*/
+  .textpriroda{
+  	background:#FFFFFF;
+  	color: #070707;
+  	font-weight: bold;
+  	opacity:0.6;
+  }
+  /*заголовок летом хорошо*/
+  .zagolovok{
+  	color:#22B934;
+  }
+  

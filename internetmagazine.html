@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" lang="rus">
+   <head>
+   	<!-- html скрепляем css-->
+    <meta http-equiv="content-Type" content="text/html, width=device-width, initial-scale=1.0, maximum-scale=0.7" charset="utf-8" name="viewport">
+    	<title>E-Stotebsingle page layout | Script Tutorials</title>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" type="text/css" href="internetmagazine.css" media="screen">
+    	<link rel="stylesheet" type="text/css" href="reset.css" media="screen">
+    	<link rel="stylesheet" type="text/css" href="nivo-slider.css" media="screen">
+    		                                <!--подключаем скрипты-->
+    		<script src="js/jquery.js"></script>
+    		<script src="js/jquery.nive.slider.pack.js"></script>
+    		<script src="js/main.js"></script>
+    		<script type="text/javascript" src="js/html5.js"></script>
+<!--часы с датой-->
+    		<script> 
+    		 var months = new Array(13); 
+months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря"; 
+       var time = new Date(); 
+       var thismonth = months[time.getMonth() + 1]; 
+       var date = time.getDate(); 
+       var thisyear = time.getYear(); 
+       var day = time.getDay() + 1; 
+       if (thisyear < 2000) thisyear = thisyear + 1900; 
+       if (day == 1) DayofWeek = "Воскресенье"; 
+       if (day == 2) DayofWeek = "Понедельник"; 
+       if (day == 3) DayofWeek = "Вторник"; 
+       if (day == 4) DayofWeek = "Среда"; 
+       if (day == 5) DayofWeek = "Четверг"; 
+       if (day == 6) DayofWeek = "Пятница"; 
+       if (day == 7) DayofWeek = "Суббота"; 
+      </script> 
+      <script> setInterval(function() { var cd = new Date(); var clockdat = document.getElementById("clockdat"); clockdat.innerHTML = cd.toLocaleTimeString(); }, 1000); 
+      </script>
+      </head>
+   <body>
+        </head>
+     <body>
+     	  <header>
+     	  	<!--часы с датой-->	  
+     	   <div class="center" style="background-color: #3b424a; padding:5px;">    <span style="color:aqua">Сегодня:</span> 
+     	    <span style="color:silver; font-size:14px;"> 
+     	     <script> document.write(date+" "); document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek); 
+     	     </script> 
+     	     (<span id="clockdat" style="color:aqua;"></span>) 
+     	    </span> 
+     	   </div>
+     	   <a href="index.html" class="logo">Магазин</a>
+     	   <nav>
+          <ul class="topmenu">
+           <li><a href="index.html">Главная</a></li>
+           <li><a href="#">Меню</a>
+            <ul class="submenu"> 
+     	       <li><a href="Mir.html">Мир</a></li> 
+     	       <li><a href="sertificat.html">Сертификаты</a></li>
+     	      </ul>
+     	     </li>
+          <li><a href="#">Контакты</a>
+           <ul class="submenu">
+            <li><a href="mailto:nazarov_yura@mail.ru">Почта</a></li><!--href="mailto:nazarov_yura@mail.ru?subject="текст"-->
+     	      	<li><a href="https://wa.me/79269042442?text=привет!">WhatsApp</a></li><!--"https://wa.me/79269042442" без текста-->
+     	     </ul>
+          </li>
+        </nav> 
+     	 </header>
+     	<a>
+     		<div class="ROMB ROMBM"><a class="mapp">ОТКРЫТЬ</a>
+     			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A649149c166d871fdb7d27076d5678c23d7014f315c756c80880b348515b03b4a&amp;source=constructor" width="1280" height="240" frameborder="0">
+     			</iframe>
+     		</div>
+     	</a>
+     	 <div class="blok-menu">
+        <ul class="menu">
+          <li><a href="mailto:nazarov_yura@mail.ru">Почта</a></li><!--href="mailto:nazarov_yura@mail.ru?subject="текст"-->
+     	    <li><a href="https://wa.me/79269042442?text=привет!">WhatsApp</a></li><!--"https://wa.me/79269042442" без текста-->
+        </ul>
+      </div>
+   </body>
+</html>
